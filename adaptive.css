@@ -1,0 +1,352 @@
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .nav-item {
+        display: none;
+    }
+    .header__hamburger-menu {
+        display: block;
+        margin-right: 20px;
+    }
+    .header__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }    
+    .header__logo{
+        margin-left: 40px;
+    }
+    .login{    
+        margin-left: 35%;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 50px;
+        height: 40px;
+        margin-right: 5vw;
+    }
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #ffffff;
+    }
+    .menu__btn>span::before {
+        content: '';
+        top: -15px;
+    }
+    .menu__btn>span{
+        top: 10px
+    }
+    .menu__btn>span::after {
+        content: '';
+        top: 15px;
+    }
+    .menu__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #F2785C;
+        border-radius: 20px;
+        z-index: 100;
+    }
+    .menu__item {
+        display: block;
+        padding: 20px;
+        color: #FFFFFF;
+        font-family: 'Red Hat Text' sans-serif;
+        font-size: 3em;
+        text-align: center;
+        padding-right: 50px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .menu__item:hover{
+        background-color: #0D606F;
+    }
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+        top: 0;
+        z-index: 200;
+    }
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        right: 0;
+    }
+    .stories__travel{
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+    .stories__block{
+        padding: 30px 80px;
+    }
+    .stories__travel-text, 
+    .stories__img,
+    .preview__title,
+    .preview__description,
+    .footer__text{
+        display: none;
+    }
+    .stories__travel-text_mobile{
+        display: block;
+    }
+    .stories__img2{
+        display: block;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+        border-radius: 16px;
+        width: 100%;
+    }
+    #preview{
+        width: 100%;
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+        left: 0;
+    }
+    .search{
+        width: 90%;
+    }
+    .social-media{
+        gap: 30px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .stories__travel-text, 
+    .preview__title,
+    .preview__description,
+    .search{
+        display: none;
+    }
+    .nav-item,
+    .login,
+    .header__logo,
+    .footer__text,
+    .background1 {
+        display: none;
+    }
+    .header{
+        min-width: 400px;
+        position: relative;
+    }
+    .header__logo2 {
+        display: block;
+    }
+    .header__hamburger-menu,
+    .header__logo2 {
+        display: block;
+        margin-right: 20px;
+    }
+    .header__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }    
+    .header__logo{
+        margin-left: 40px;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 50px;
+        height: 40px;
+        margin-right: 5vw;
+    }
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #ffffff;
+    }
+    .menu__btn>span::before {
+        content: '';
+        top: -15px;
+    }
+    .menu__btn>span{
+        top: 10px
+    }
+    .menu__btn>span::after {
+        content: '';
+        top: 15px;
+    }
+    .menu__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #F2785C;
+        border-radius: 20px;
+        z-index: 100;
+    }
+    .menu__item {
+        display: block;
+        padding: 20px;
+        color: #FFFFFF;
+        font-family: 'Red Hat Text' sans-serif;
+        font-size: 3em;
+        text-align: center;
+        padding-right: 50px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .menu__item:hover{
+        background-color: #0D606F;
+    }
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+        top: 0;
+        z-index: 200;
+    }
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        right: 0;
+    }
+    
+    .stories__travel{
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+    .stories__block{
+        padding: 30px 80px;
+    }
+    .stories__travel-title{
+        font-size: 1.5em;
+    }
+    .stories__travel-text_mobile{
+        display: block;
+    }
+    #preview{
+        width: 100%;
+        margin-top: 15%;
+        display: flex;
+        justify-content: center;
+        left: 0;
+    }
+    .search{
+        width: 90%;
+        min-height: 70px;
+    }
+    .social-media{
+        gap: 30px;
+    }
+    .header__logo2{
+        margin-left: 50px;
+    }
+    .search__text{
+        font-size: 1em;
+        line-height: 29px;
+    }
+    .search__btn{
+        width: 40%;
+        min-height: 50%;
+        font-size: 1em;
+        border-radius: 10%;
+    }
+    .section__title{
+        font-size: 1.5em;
+    }
+    .dots{
+        position: absolute;
+        text-align:center;
+        margin-top: -60px;
+        width: 100%;
+        text-align: center;
+    }
+    .slideshow-container{
+        position: relative;
+    }
+    .destinations__img{
+        border-radius: 60px;
+        width: 80%;
+    }
+    .destinations__text{
+        font-size: 1.7em;
+        line-height: 42px;
+        margin-top: -450px;
+    }
+    .arrow {
+        cursor: pointer;
+        position: absolute;
+    }
+    .prev, .next {
+        margin-top: -30px;
+        font-size: 70px;
+    }
+    .prev{
+        left: 7%;
+    }
+    .next {
+        right: 7%;
+    }
+    .stories__block{
+        padding: 30px 50px;
+    }
+    .stories__travel{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .stories__travel-text_mobile{
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2em;
+        color: #0D606F;
+    }
+    .steps__text{
+        padding: 0 10px;
+    }
+}  
